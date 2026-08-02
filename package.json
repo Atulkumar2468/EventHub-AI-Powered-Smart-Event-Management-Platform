@@ -1,0 +1,10 @@
+{
+  "name": "eventhub",
+  "version": "1.0.0",
+  "description": "MIT-WPU EventHub — Full MERN Stack",
+  "scripts": {
+    "server": "cd server && node index.js",
+    "client": "cd client && npm run dev",
+    "dev": "start cmd /k \"cd server && node index.js\" && start cmd /k \"cd client && npm run dev\""
+  }
+}

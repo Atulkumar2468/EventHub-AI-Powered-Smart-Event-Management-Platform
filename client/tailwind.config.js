@@ -1,0 +1,67 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'primary': '#c3f5ff',
+        'primary-container': '#00e5ff',
+        'on-primary': '#00363d',
+        'on-primary-container': '#00626e',
+        'secondary': '#ffb1c5',
+        'secondary-container': '#de0071',
+        'on-secondary': '#650030',
+        'on-secondary-container': '#fff6f7',
+        'tertiary': '#ffeac0',
+        'tertiary-container': '#fec931',
+        'surface': '#0d1516',
+        'surface-dim': '#0d1516',
+        'surface-container': '#192122',
+        'surface-container-low': '#151d1e',
+        'surface-container-high': '#242b2d',
+        'surface-container-highest': '#2e3638',
+        'surface-container-lowest': '#080f11',
+        'surface-bright': '#333a3c',
+        'surface-variant': '#2e3638',
+        'on-surface': '#dce4e5',
+        'on-surface-variant': '#bac9cc',
+        'outline': '#849396',
+        'outline-variant': '#3b494c',
+        'background': '#0d1516',
+        'on-background': '#dce4e5',
+        'error': '#ffb4ab',
+        'inverse-surface': '#dce4e5',
+        'inverse-primary': '#006875',
+      },
+      fontFamily: {
+        'space': ['Space Grotesk', 'sans-serif'],
+        'mono': ['JetBrains Mono', 'monospace'],
+        'body': ['Manrope', 'sans-serif'],
+      },
+      fontSize: {
+        'label-mono': ['12px', { lineHeight: '1.0', letterSpacing: '0.1em', fontWeight: '500' }],
+        'nav-mono': ['13px', { lineHeight: '1.0', letterSpacing: '0.05em', fontWeight: '600' }],
+        'headline-lg': ['32px', { lineHeight: '1.2', letterSpacing: '-0.01em', fontWeight: '700' }],
+        'headline-xl': ['48px', { lineHeight: '1.1', letterSpacing: '-0.02em', fontWeight: '700' }],
+        'body-md': ['16px', { lineHeight: '1.6', fontWeight: '400' }],
+        'body-sm': ['14px', { lineHeight: '1.5', fontWeight: '400' }],
+      },
+      spacing: {
+        'sidebar': '240px',
+        'header': '64px',
+      },
+      keyframes: {
+        ping: { '75%, 100%': { transform: 'scale(2)', opacity: '0' } },
+        'glow-pulse': {
+          '0%, 100%': { boxShadow: '0 0 8px rgba(0, 229, 255, 0.3)' },
+          '50%': { boxShadow: '0 0 20px rgba(0, 229, 255, 0.7)' },
+        },
+      },
+      animation: {
+        'glow-pulse': 'glow-pulse 2s ease-in-out infinite',
+      },
+    },
+  },
+  plugins: [],
+}
